@@ -5,6 +5,13 @@ This is a sample of a simple React project using webpack.
 
 ## Construction Procedure (構築手順)
 
+### Create project folder (プロジェクトフォルダの作成)
+
+```sh
+mkdir test-app
+cd test-app
+```
+
 ### Initializing package (パッケージの初期化)
 
 ```sh
@@ -26,7 +33,7 @@ npm install --save-dev react react-dom @types/react @types/react-dom
   "scripts": {
 +    "start": "webpack-cli serve --mode development",
 +    "build": "webpack-cli --node-env=production --mode production",
-  },
+  }
 ```
 
 ### Adding `webpack.config.js` (`webpack.config.js`の追加)
@@ -102,11 +109,26 @@ npx tsc --init
 +    "jsx": "react-jsx",
 -    // "outDir": "./",
 +    "outDir": "./dist",
-  },
+-  }
++  },
++  "files": [
++    "src/index.tsx",
++  ],
++  "include": [
++    "src/**/*",
++  ],
++  "exclude": [
++    "./node_modules",
++    "./dist"
++  ]
 }
 ```
 
 ### Adding `src/index.html` (`src/index.html`の追加)
+
+```sh
+mkdir src
+```
 
 ```html
 <!-- src/index.html -->
