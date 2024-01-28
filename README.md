@@ -1,7 +1,7 @@
 # Simple React project with webpack
 
-シンプルなwebpackを利用したReactプロジェクトのサンプルです。
-This is a sample of a simple React project using webpack.
+シンプルなwebpackを利用したReact + Typescript プロジェクトのサンプルです。
+This is a sample React + Typescript project using simple webpack.
 
 ## Construction Procedure (構築手順)
 
