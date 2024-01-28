@@ -1,8 +1,8 @@
 {
   "name": "simple-react-project-with-webpack",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "webpack-cli serve --mode development",
     "build": "webpack-cli --node-env=production --mode production",
@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
